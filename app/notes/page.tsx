@@ -26,3 +26,4 @@ export default async function Notes() {
     )
 }
 
+export const dynamic = 'force-dynamic';
