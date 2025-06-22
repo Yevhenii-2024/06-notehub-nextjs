@@ -6,7 +6,8 @@ import { useParams } from 'next/navigation';
 import css from './NoteDetails.module.css';
 
 function NoteDetailsClient() {
-	const id = Number(useParams<{ id: string }>().id);
+	const params = useParams();
+    const id = Number(params.id);
 
 	const {
 		data: note,
